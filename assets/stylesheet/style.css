@@ -171,15 +171,54 @@ a {
       flex-wrap: wrap;
 }
 
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 2rem;
+  background: #8860d0;
+  background: -webkit-gradient(linear, right top, left top, from(#8860d0), to(#5ab9ea));
+  background: linear-gradient(to left, #8860d0, #5ab9ea);
+  -webkit-box-shadow: 3px 6px 6px rgba(90, 185, 234, 0.3);
+          box-shadow: 3px 6px 6px rgba(90, 185, 234, 0.3);
+  -webkit-transition: background 500ms ease-in;
+  transition: background 500ms ease-in;
+}
+
+.btn:hover {
+  background: -webkit-gradient(linear, left top, right top, from(#8860d0), to(#5ab9ea));
+  background: linear-gradient(to right, #8860d0, #5ab9ea);
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .navbar {
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 
 .navbar .logo {
   font-size: 1.8rem;
   font-weight: 700;
-  color: #6f778a;
+  color: #131313;
 }
 
 .navbar a {
@@ -192,12 +231,56 @@ a {
 
 .navbar .nav-list li a {
   font-size: 1.2rem;
-  color: #6f778a;
+  color: #797979;
   padding: 2em 2em;
 }
 
 .navbar .nav-list li a:hover {
-  color: #8860d0;
-  background-color: rgba(136, 96, 208, 0.2);
+  color: #5ab9ea;
+  background-color: rgba(90, 185, 234, 0.2);
+}
+
+.hero {
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+
+.hero .hero-content {
+  background-color: #faf9fe;
+  padding: 2rem;
+  border-radius: 20px;
+  place-items: center;
+}
+
+.hero .hero-content img {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero .hero-content article {
+  padding: 2rem 4rem;
+}
+
+.hero .hero-content article .me {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: #797979;
+  letter-spacing: 3px;
+}
+
+.hero .hero-content article h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #131313;
+}
+
+.hero .hero-content article p {
+  color: #797979;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */

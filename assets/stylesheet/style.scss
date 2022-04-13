@@ -4,7 +4,13 @@
 
 //Header
 .navbar {
-  box-shadow: 0 2px 4px rgba($color: #000000, $alpha: 0.2);
+  box-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.3);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background-color: rgba($color: #fff, $alpha: 0.9);
   .logo {
     font-size: 1.8rem;
     font-weight: 700;
@@ -18,12 +24,50 @@
       margin-left: 2rem;
       a {
         font-size: 1.2rem;
-        color: $primary-text-color;
+        color: $secondary-text-color;
         padding: 2em 2em;
         &:hover {
           color: $secondary;
           background-color: rgba($color: $secondary, $alpha: 0.2);
         }
+      }
+    }
+  }
+}
+
+// Hero
+.hero {
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+  .hero-content {
+    background-color: #faf9fe;
+    padding: 2rem;
+    border-radius: 20px;
+    place-items: center;
+    img {
+      border-radius: 50%;
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+    }
+    article {
+      padding: 2rem 4rem;
+      .me {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: $secondary-text-color;
+        letter-spacing: 3px;
+      }
+      h1 {
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        color: $primary-text-color;
+      }
+      p {
+        color: $secondary-text-color;
+        font-size: 1.2rem;
       }
     }
   }

@@ -32,3 +32,28 @@ a {
   align-items: center;
   flex-wrap: wrap;
 }
+
+//grid
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.col-span-2 {
+  grid-column: span 2;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  display: inline-block;
+  border-radius: 20px;
+  color: #fff;
+  margin-top: 2rem;
+  background: $primary;
+  background: linear-gradient(to left, $primary, $secondary);
+  box-shadow: 3px 6px 6px rgba($color: $secondary, $alpha: 0.3);
+  transition: background 500ms ease-in;
+  &:hover {
+    background: linear-gradient(to right, $primary, $secondary);
+    box-shadow: none;
+  }
+}
