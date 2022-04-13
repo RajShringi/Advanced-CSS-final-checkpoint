@@ -148,6 +148,8 @@ a {
 
 .full-width {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .container {
@@ -171,11 +173,21 @@ a {
       flex-wrap: wrap;
 }
 
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .grid-container {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 
 .col-span-2 {
@@ -286,6 +298,11 @@ a {
 }
 
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
   margin-top: 2rem;
   padding: 2rem 0;
   -webkit-box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);
@@ -338,5 +355,48 @@ footer .social-icon-list li a:hover {
           transform: scale(0.95);
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.projects {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.projects .project {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.projects .project:hover .project-details {
+  opacity: 1;
+}
+
+.projects .project .project-title {
+  padding: 1rem;
+  background: #5ab9ea;
+  color: #fff;
+}
+
+.projects .project-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.5);
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in;
+  transition: opacity 300ms ease-in;
+}
+
+.projects .project-details a {
+  margin-left: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

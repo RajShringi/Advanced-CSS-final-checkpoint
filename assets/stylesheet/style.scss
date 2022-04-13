@@ -75,6 +75,11 @@
 
 // Footer
 footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
   margin-top: 2rem;
   padding: 2rem 0;
   box-shadow: 0 -3px 6px rgba($color: #000000, $alpha: 0.1);
@@ -102,6 +107,43 @@ footer {
           box-shadow: none;
         }
       }
+    }
+  }
+}
+
+.projects {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  .project {
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    box-shadow: 0 0 3px rgba($color: #000000, $alpha: 0.2);
+    border-radius: 20px;
+    &:hover {
+      .project-details {
+        opacity: 1;
+      }
+    }
+    .project-title {
+      padding: 1rem;
+      background: $secondary;
+      color: #fff;
+    }
+  }
+  .project-details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba($color: #fff, $alpha: 0.5);
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    transition: opacity 300ms ease-in;
+    a {
+      margin-left: 1rem;
     }
   }
 }

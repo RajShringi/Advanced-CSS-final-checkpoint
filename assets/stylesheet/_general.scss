@@ -17,6 +17,7 @@ a {
 
 .full-width {
   width: 100%;
+  object-fit: cover;
 }
 
 .container {
@@ -33,10 +34,16 @@ a {
   flex-wrap: wrap;
 }
 
+.justify-center {
+  justify-content: center;
+}
+
 //grid
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  align-items: start;
 }
 .col-span-2 {
   grid-column: span 2;
