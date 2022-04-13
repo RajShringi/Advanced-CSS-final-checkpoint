@@ -399,4 +399,84 @@ footer .social-icon-list li a:hover {
 .projects .project-details a {
   margin-left: 1rem;
 }
+
+.blogs {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.blogs .blog {
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
+}
+
+.blogs .blog:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.blogs .blog .blog-detail {
+  padding: 1rem;
+}
+
+.blogs .blog .blog-detail h3 {
+  font-size: 1.5rem;
+  color: #131313;
+  color: #5ab9ea;
+}
+
+.blogs .blog .blog-detail p {
+  font-size: 1.2rem;
+  color: #797979;
+}
+
+.contact {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  text-align: center;
+}
+
+.contact h2 {
+  color: #131313;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.contact img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.contact form {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 20px;
+}
+
+.contact form input,
+.contact form textarea {
+  display: block;
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 2px solid #eeeaea;
+  border-radius: 20px;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+}
 /*# sourceMappingURL=style.css.map */
