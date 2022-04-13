@@ -49,11 +49,11 @@ a {
   color: #fff;
   margin-top: 2rem;
   background: $primary;
-  background: linear-gradient(to left, $primary, $secondary);
+  background: $secondary;
   box-shadow: 3px 6px 6px rgba($color: $secondary, $alpha: 0.3);
-  transition: background 500ms ease-in;
+  transition: transform 200ms ease-in;
   &:hover {
-    background: linear-gradient(to right, $primary, $secondary);
+    transform: scale(0.95);
     box-shadow: none;
   }
 }

@@ -189,17 +189,18 @@ a {
   color: #fff;
   margin-top: 2rem;
   background: #8860d0;
-  background: -webkit-gradient(linear, right top, left top, from(#8860d0), to(#5ab9ea));
-  background: linear-gradient(to left, #8860d0, #5ab9ea);
+  background: #5ab9ea;
   -webkit-box-shadow: 3px 6px 6px rgba(90, 185, 234, 0.3);
           box-shadow: 3px 6px 6px rgba(90, 185, 234, 0.3);
-  -webkit-transition: background 500ms ease-in;
-  transition: background 500ms ease-in;
+  -webkit-transition: -webkit-transform 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in;
+  transition: transform 200ms ease-in;
+  transition: transform 200ms ease-in, -webkit-transform 200ms ease-in;
 }
 
 .btn:hover {
-  background: -webkit-gradient(linear, left top, right top, from(#8860d0), to(#5ab9ea));
-  background: linear-gradient(to right, #8860d0, #5ab9ea);
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -282,5 +283,60 @@ a {
 .hero .hero-content article p {
   color: #797979;
   font-size: 1.2rem;
+}
+
+footer {
+  margin-top: 2rem;
+  padding: 2rem 0;
+  -webkit-box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+footer .social-icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .social-icon-list li {
+  margin: 0 1rem;
+}
+
+footer .social-icon-list li a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  font-size: 1.5rem;
+  background: #5ab9ea;
+  -webkit-box-shadow: 3px 6px 6px rgba(90, 185, 234, 0.3);
+          box-shadow: 3px 6px 6px rgba(90, 185, 234, 0.3);
+  border-radius: 50%;
+  -webkit-transition: -webkit-transform 200ms ease-in, -webkit-box-shadow 200ms ease-in;
+  transition: -webkit-transform 200ms ease-in, -webkit-box-shadow 200ms ease-in;
+  transition: transform 200ms ease-in, box-shadow 200ms ease-in;
+  transition: transform 200ms ease-in, box-shadow 200ms ease-in, -webkit-transform 200ms ease-in, -webkit-box-shadow 200ms ease-in;
+}
+
+footer .social-icon-list li a:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=style.css.map */
